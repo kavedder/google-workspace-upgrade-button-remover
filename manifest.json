@@ -9,5 +9,10 @@
             "exclude_matches": ["https://www.google.com/*"],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "upgrade16.png",
+        "48": "upgrade48.png",
+        "128": "upgrade128.png"
+    }
 }
