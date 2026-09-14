@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Google Workspace Element Button Remover",
+    "version": "1.0",
+    "description": "Removes the stupid blue 'Update' button from all Google Workspace apps",
+    "content_scripts": [
+        {
+            "matches": ["https://*.google.com/*"],
+            "exclude_matches": ["https://www.google.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
