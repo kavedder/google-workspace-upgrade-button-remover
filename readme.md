@@ -14,4 +14,4 @@ Gmail specifically seems to be structured differently than other apps, so there 
 - Open Google Chrome and go to chrome://extensions/.
 - Turn on Developer mode using the toggle switch in the top-right corner.
 - Click the Load unpacked button in the top-left area.
-- Select the this downloaded repo folder. Visit any Google Workspace app (eg. `calendar.google.com`, `gmail.com`, `docs.google.com`) to test. You can open the console and see the element removed in the logs.
+- Select this downloaded repo folder. Visit any Google Workspace app (eg. `calendar.google.com`, `gmail.com`, `docs.google.com`) to test. You can open the console and see the element removed in the logs.
