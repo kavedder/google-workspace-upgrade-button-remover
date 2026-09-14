@@ -13,13 +13,10 @@ function waitForButton(buttonLabel, dataPepId, timeout = 5000) {
         const elementByLabelMatch = spans.find(el => el.textContent.trim() === buttonLabel);
 
         if (elementByAriaLabel) {
-            console.log('a');
             return resolve(elementByAriaLabel);
         } else if (elementByDataPepId) {
-            console.log('b');
             return resolve(elementByDataPepId);
         } else if (elementByLabelMatch) {
-            console.log('c');
             const parentButton = elementByLabelMatch.closest('button');
             return resolve(parentButton);
         }
@@ -34,16 +31,13 @@ function waitForButton(buttonLabel, dataPepId, timeout = 5000) {
 
             if (elByAriaLabel) {
                 observer.disconnect();
-                console.log('d');
                 resolve(elByAriaLabel);
             } else if (elByDataPepId) {
                 observer.disconnect();
-                console.log('e');
                 resolve(elByDataPepId);
             } else if (elByLabelMatch) {
                 observer.disconnect();
                 const parentButton = elByLabelMatch.closest('button');
-                console.log('f');
                 resolve(parentButton);
             }
         });
